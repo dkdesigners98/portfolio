@@ -1,0 +1,494 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Dhavish Kakirde | Graphic Designer</title>
+        <meta name="description" content="Graphic designer in Satna. Website Designing, logo designing, social media posts.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
+        
+        <style>
+            body{
+                background: rgb(20, 20, 20);
+            }
+            html{
+                  scroll-behavior: smooth;
+            }
+            ul{
+                float: right;
+                list-style: none;
+                padding: 30px;
+
+            }
+            .navbar a{
+                text-decoration: none;
+                color: white;
+            }
+            li{
+                display: inline;
+                color: rgb(255, 255, 255);
+                font-family: momcake thin;
+                font-size: 2.5rem;
+                padding: 20px;
+                cursor: pointer;
+            }
+            li a:hover{
+                color: rgb(252, 108, 13);
+                padding: 10px;
+                border-bottom: 2px solid white;
+            }
+            
+           strong{
+                 color: white;
+                 animation: colorchange 3s infinite;
+           }
+           @keyframes colorchange{
+                 0%{
+                     color: orange;
+                 }
+                 25%{
+                     color: yellow;
+                 }
+                 50%{
+                     color: yellowgreen;
+                 }
+                 100%{
+                       color: white;
+                 }
+           }
+           hr{
+               animation: linewidth 5s infinite;
+           }
+           @keyframes linewidth{
+               0%{
+                   width: 0%;
+               }
+               100%{
+                      width: 100%;
+                      
+               }
+           }
+           
+            emp{
+                font-size: 3rem;
+                color: white;
+               
+
+            }
+             #info{
+                  padding: 100px 10px 10px 10px;
+             }
+            p{
+                font-family: mont;
+                font-size: 5rem;
+                color: white;
+            }
+            strong{
+                  font-size: 6rem;
+            }
+            #main{
+                display:flex;
+            }
+            #me2{
+                  display: flex;
+                  margin: 5%;
+            }
+            .line{
+                    width: 95%;
+                    height: 2px;
+                    border-radius: 20px;
+                    margin: 2%;
+                    background-color: white;
+            }
+            .serv{
+                    width: 300px;
+                    height: 85px;
+                    margin: 3%;
+                    background: white;
+                    text-align: center;
+            }
+            .serv p{
+                color: black;
+                padding: 20px;
+                font-size: 4rem;
+                font-weight: 4px;
+                transition: 2s;
+            }
+            .servi{
+                  display: flex;
+            }
+            .serv-1{
+                      width: 250px;
+                      height: 250px;
+                      border: 1px solid white;
+                      margin: 5%;
+                      background-image: url("images/dklogo.jpg");
+                      background-position: center;
+                      background-repeat: no-repeat;
+                      background-size: cover;
+                      
+            }
+            .about p{
+                   font-size: 3rem;
+                   margin-left: 4%;
+            }
+            .serv-1 p{
+                       background-color: rgba(255, 255, 255, 0.7);
+                       font-size: 3rem;
+                       padding: 30%;
+                       color: black;
+            }
+            .serv-1:hover>p{
+                          cursor: pointer;
+                          background-color: rgb(255, 131, 131);
+            }
+            .skills h5{
+                     
+                     color: white;
+                     font-size: 4rem;
+                     margin-left: 5%;
+                     font-family: momcake;
+                     
+            }
+            .per{
+                   width: 90%;
+                   background-color: rgb(13,233,179);
+                   height: 10px;
+                   margin: 2%;
+                   margin-left: 5%;
+                   border-radius: 20px;
+            }
+            .icons{
+                     margin-left: 5%;
+                     display: flex;
+            }
+            .icons p{
+                      font-size: 2.5rem;
+                      padding: 45px 10px 10px 10px;
+                      
+            }
+            .social{
+                     border-top: 2px solid yellowgreen;
+                     width: 20%;
+                     height: 50px;
+                     margin-left: 40%;
+                     display: flex;
+                     justify-content: space-evenly;
+                     padding: 20px;
+                     text-align: center;
+            }
+            .social a:hover{
+
+                      opacity: 0.5;        
+                          
+                         
+            }
+
+
+            /* popup*/
+            .modal {
+                display: none; /* Hidden by default */
+                position: fixed; /* Stay in place */
+                z-index: 1; /* Sit on top */
+                padding-top: 100px; /* Location of the box */
+                left: 0;
+                top: 0;
+                width: 100%; /* Full width */
+                height: 100%; /* Full height */
+                overflow: auto; /* Enable scroll if needed */
+                background-color: rgb(0,0,0); /* Fallback color */
+                background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+                }
+
+                /* Modal Content */
+                .modal-content {
+                background-color: #fefefe;
+                display: flex;
+                margin: auto;
+                padding: 20px;
+                border: 1px solid #888;
+                width: 80%;
+                }
+
+                /* The Close Button */
+                .close {
+                color: #ff0505;
+                float: left;
+                margin-left: 6%;
+                font-size: 20px;
+                font-weight: bold;
+                }
+
+                .close:hover,
+                .close:focus {
+                color: #000;
+                text-decoration: none;
+                cursor: pointer;
+                }
+               .img-1 img{
+                        width: 250px;
+                        height: auto;
+                        
+                        }   
+                .img-1 img:nth-child(2){
+                         width: 130px;
+                         height: auto;
+                }     
+               
+
+
+
+            @media (max-width:780px){
+                li{
+                    font-size: 2rem;
+                    padding: 15px;
+                }
+                p{
+                    font-size: 2rem;
+                }
+                strong{
+                    font-size: 3rem;
+                }
+                #services{
+                    display: inline-block;
+                }
+                #info{
+                    padding: 1px;
+                     text-align: center;
+                     
+                }
+                #main{
+                    display: inline;
+                    margin: 0%;
+                }
+                #me{
+                    display: inline
+                }
+                #me2{
+                      display: inline;
+                }
+                .social{
+                      width: 60%;
+                      margin-left: 10%;
+                        }
+                emp{
+                    font-size: 1.5rem;
+                }
+                
+               .servi{
+                  display: inline;
+                  margin-left: 10%;
+                 }
+                 .serv{
+                     display: flex;
+                     flex-wrap: wrap;
+                 }
+                 .serv-1{
+                        display: flex;
+                        width: 100%;
+                        justify-content: center;
+                        align-items: center;
+                        margin: auto;
+                 }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <ul>
+                <li><a href="#main">Home</a></li>
+                <li><a href="#services">My Services</a></li>
+                <li><a href="#me">About Me</a></li>
+                <li><a href="#myskills">My Skills</a></li>
+            </ul>
+        </div>
+        <div class="row" id="main">
+            <div class="column">
+                <div class="image"><img src="images/mine.png" width="500px"></div>
+            </div>
+            <div class="column" id="info">
+                <p style="color:rgb(252, 108, 13) ;">I'm</p>
+                <strong id="title">DHAVISH KAKIRDE</strong><br>
+                
+                <p style="font-size: 2rem;">a Graphic & a Web Designer<br></p>
+                <hr>
+                <br>
+                <emp><b style="color: rgb(252, 108, 13);">"</b> In this era of social presence<br>you need someone to design<br> it effectively. <b style="color: rgb(252, 108, 13);">"</b></emp>
+            </div>
+        </div>
+        <div class="line"></div>
+        <section id="services">
+            <div class="serv">
+                <p>My Services</p>
+            </div>
+            <div class="servi">
+                <div class="serv-1" id="myBtn">
+                 <p>Logo Design</p>
+                </div>
+                <div class="serv-1">
+                 <p>Business cards</p>
+                </div>
+                <div class="serv-1">
+                 <p>Website Designing</p>
+                </div>
+                
+            </div>
+            <div class="servi">
+                <div class="serv-1">
+                    <p style="padding: 21%;">Social Media Designs</p>
+                </div>
+                <div class="serv-1">
+                    <p>Menu cards</p>
+                </div>
+                <div class="serv-1">
+                    <p style="padding: 27.4%;">Flyers & Brochers </p>
+                </div>
+                
+            </div>
+
+
+        </section>
+        <div class="line"></div>
+        <section id="me" class="row">
+            <div class="serv">
+                <p>About Me</p>
+            </div><br>
+            <div class="column" id="me2">
+                <div class="image"><img src="images/mine3.png" width="250px"></div>
+                <div class="about"><p>I am an MCA graduate, live in Satna. I am a
+                    <b style="color: rgb(218, 255, 7);">Graphic designer</b> and a part time cricketer 
+                    (as all indians are).<br> In this era of tough competition
+                    in every business I help business owners to build their
+                     effective social media presence. I own my own 
+                    business named <b style="color: rgb(255, 173, 20);">dkdesigners</b> and also working as 
+                    partner in a startup called <b style="color: rgb(218, 255, 7);">The Digital Grow.</b> 
+                    </p>
+                </div><br>
+                
+                    
+            </div>
+            <div class="social">
+                <a href="https://www.facebook.com/profile.php?id=100005633838461" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                    width="30" height="30"
+                    viewBox="0 0 226 226"
+                    style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,226v-226h226v226z" fill="none"></path><g fill="#cccccc"><path d="M205.29069,0h-184.58138c-11.29265,0 -20.70931,9.41667 -20.70931,20.70931v184.58138c0,11.29265 9.41667,20.70931 20.70931,20.70931h92.29069v-94.16667h-28.25v-28.25h28.25v-28.25c0,-23.54167 9.41667,-37.66667 37.66667,-37.66667h28.25v28.25h-12.24902c-8.46029,0 -16.00098,7.54069 -16.00098,16.00098v21.66569h37.66667l-4.70833,28.25h-32.95833v94.16667h54.62402c11.29265,0 20.70931,-9.41667 20.70931,-20.70931v-184.58138c0,-11.29265 -9.41667,-20.70931 -20.70931,-20.70931z"></path></g></g></svg></a>
+                <a href="https://instagram.com/dhavishkakirde?igshid=lrsbbfbkeozy" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                    width="50" height="50"
+                    viewBox="0 0 226 226"
+                    style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#cccccc"><path d="M59.125,17.91667c-22.69544,0 -41.20833,18.5129 -41.20833,41.20833v53.75c0,22.69238 18.51225,41.20833 41.20833,41.20833h53.75c22.69303,0 41.20833,-18.51531 41.20833,-41.20833v-53.75c0,-22.69608 -18.51595,-41.20833 -41.20833,-41.20833zM59.125,28.66667h53.75c16.88195,0 30.45833,13.57292 30.45833,30.45833v53.75c0,16.88131 -13.57703,30.45833 -30.45833,30.45833h-53.75c-16.88542,0 -30.45833,-13.57638 -30.45833,-30.45833v-53.75c0,-16.88606 13.57227,-30.45833 30.45833,-30.45833zM121.83333,43c-3.95958,0 -7.16667,3.20708 -7.16667,7.16667c0,3.95958 3.20708,7.16667 7.16667,7.16667c3.95958,0 7.16667,-3.20708 7.16667,-7.16667c0,-3.95958 -3.20708,-7.16667 -7.16667,-7.16667zM86,50.16667c-19.72561,0 -35.83333,16.10772 -35.83333,35.83333c0,19.72561 16.10772,35.83333 35.83333,35.83333c19.72561,0 35.83333,-16.10772 35.83333,-35.83333c0,-19.72561 -16.10772,-35.83333 -35.83333,-35.83333zM86,60.91667c13.91472,0 25.08333,11.16861 25.08333,25.08333c0,13.91472 -11.16861,25.08333 -25.08333,25.08333c-13.91472,0 -25.08333,-11.16861 -25.08333,-25.08333c0,-13.91472 11.16861,-25.08333 25.08333,-25.08333z"></path></g></g></svg></a>
+                <a href="https://www.linkedin.com/in/dhavish-kakirde-114a871a5/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                    width="30" height="30"
+                    viewBox="0 0 226 226"
+                    style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,226v-226h226v226z" fill="none"></path><g fill="#cccccc"><path d="M205.29069,0h-184.58138c-11.29265,0 -20.70931,9.41667 -20.70931,20.70931v184.58138c0,11.29265 9.41667,20.70931 20.70931,20.70931h184.58138c11.29265,0 20.70931,-9.41667 20.70931,-20.70931v-184.58138c0,-11.29265 -9.41667,-20.70931 -20.70931,-20.70931zM65.91667,188.33333h-37.66667v-103.58333h37.66667zM47.08333,72.50098c-11.29265,0 -18.83333,-7.54069 -18.83333,-16.95735c0,-10.33627 7.54069,-17.87696 18.83333,-17.87696c11.29265,0 18.83333,7.54069 18.83333,16.95735c0,10.33627 -7.54069,17.87696 -18.83333,17.87696zM197.75,188.33333h-37.66667v-56.5c0,-15.08138 -10.37304,-18.83333 -13.16862,-18.83333c-2.83236,0 -15.08138,1.87598 -15.08138,18.83333c0,1.87598 0,56.5 0,56.5h-37.66667v-103.58333h37.66667v15.08138c5.66472,-8.49707 15.08138,-15.08138 32.95833,-15.08138c17.87696,0 32.95833,14.125 32.95833,47.08333z"></path></g></g></svg></a>
+
+            </div>
+            
+        </section>
+        <div class="line"></div>
+        <section id="myskills">
+            <div class="serv">
+                <p>My Skills</p>
+            </div><br>
+            <div class="skills">
+                <h5 style="color: rgb(131, 236, 255);">Photoshop</h5>
+                <div class="per"></div>
+            </div>
+            <div class="skills">
+                <h5 style="color: rgb(255, 144, 16);">Illustrator</h5>
+                <div class="per" style="width: 80%;"></div>
+            </div>
+            <div class="skills">
+                <h5 style="color: rgb(68, 252, 62);">Corel Draw</h5>
+                <div class="per"></div>
+            </div>
+            <div class="skills">
+                <h5>Html</h5>
+                <div class="per"></div>
+            </div>
+            <div class="skills">
+                <h5>CSS</h5>
+                <div class="per" style="width: 80%;"></div>
+            </div>
+            <div class="skills">
+                <h5>jQuery</h5>
+                <div class="per" style="width: 80%;"></div>
+            </div>
+            <div class="skills">
+                <h5>Javascript</h5>
+                <div class="per" style="width: 50%; background-color: darkorange;"></div>
+            </div>
+
+        </section>
+        <div class="line"></div>
+        <section id="chat">
+            <div class="serv">
+                <p>Get in touch</p>
+            </div><br>
+            <div class="icons">
+                <img src="images/location.png" width="100px">
+                <p>Satna, Madhya Pradesh - 485001</p> 
+                
+            </div>
+            <div class="icons">
+                <img src="images/call.png" width="50px" height="50px" style="margin-left:2%">
+                <p style="padding: 15px 30px;">+91 8305025575</p>
+            </div>
+            <div class="icons">
+                <img src="images/mail.png" width="50px" height="50px" style="margin-left:2%">
+                <p style="padding: 15px 30px;">designer@thedigitalgrow.in</p>
+            </div>
+            
+        </section>
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              
+              <div class="img-1">
+                 <img src="images/dklogo.jpg" >
+                 <label>Logo designed for my company</label>
+              </div>
+              <div class="img-1">
+                <img src="images/logo2-100.jpg" >
+                <label>Logo designed for Grocery shop</label>
+              </div>
+              <div class="img-1">
+                <img src="images/mobile logo.jpg">
+                <label>Logo designed for Mobile shop</label>
+              </div>
+              <span class="close">&times;</span>
+            </div>
+            
+          
+          </div>
+          <script>
+            // Get the modal
+            var modal = document.getElementById("myModal");
+            
+            // Get the button that opens the modal
+            var btn = document.getElementById("myBtn");
+            
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+            
+            // When the user clicks the button, open the modal 
+            btn.onclick = function() {
+              modal.style.display = "block";
+            }
+            
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+              modal.style.display = "none";
+            }
+            
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+              if (event.target == modal) {
+                modal.style.display = "none";
+              }
+            }
+            </script>
+    </body>
+</html>
