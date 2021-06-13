@@ -39,7 +39,9 @@
                 
                 border-bottom: 2px solid white;
             }
-            
+            .mod-1{
+                    padding: 5%;
+            }
            strong{
                  color: white;
                  animation: colorchange 3s infinite;
@@ -186,52 +188,56 @@
                          
             }
 
-
-            /* popup*/
             .modal {
-                display: none; /* Hidden by default */
-                position: fixed; /* Stay in place */
-                z-index: 1; /* Sit on top */
-                padding-top: 100px; /* Location of the box */
-                left: 0;
-                top: 0;
-                width: 100%; /* Full width */
-                height: 100%; /* Full height */
-                overflow: auto; /* Enable scroll if needed */
-                background-color: rgb(0,0,0); /* Fallback color */
-                background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-                }
+                    display: none; /* Hidden by default */
+                    position: fixed; /* Stay in place */
+                    z-index: 1; /* Sit on top */
+                    padding-top: 100px; /* Location of the box */
+                    left: 0;
+                    top: 0;
+                    width: 100%; /* Full width */
+                    height: 100%; /* Full height */
+                    overflow: auto; /* Enable scroll if needed */
+                    background-color: rgb(0,0,0); /* Fallback color */
+                    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+                    }
+                    
 
-                /* Modal Content */
-                .modal-content {
-                background-color: #fefefe;
-                display: flex;
-                margin: auto;
-                padding: 20px;
-                border: 1px solid #888;
-                width: 80%;
-                }
+                    /* Modal Content */
+                    .modal-content {
+                    background-color: #fefefe;
+                    margin: auto;
+                    padding: 20px;
+                    display: flex;
+                    border: 1px solid #888;
+                    width: 80%;
+                    }
+                    
 
-                /* The Close Button */
-                .close {
-                color: #ff0505;
-                float: left;
-                margin-left: 6%;
-                font-size: 20px;
-                font-weight: bold;
-                }
+                    /* The Close Button */
+                    .close {
+                    color: #360404;
+                    float: right;
+                    font-size: 28px;
+                    font-weight: bold;
+                    }
 
-                .close:hover,
-                .close:focus {
-                color: #000;
-                text-decoration: none;
-                cursor: pointer;
-                }
+                    .close:hover,
+                    .close:focus {
+                    color: #000;
+                    text-decoration: none;
+                    cursor: pointer;
+                    }
+                    
                .img-1 img{
                         width: 250px;
                         height: auto;
+                        cursor: pointer;
                         
                         }   
+                .img-1:hover{
+                               opacity: 0.8;
+                }
                 .img-1 img:nth-child(2){
                          width: 130px;
                          height: auto;
@@ -276,6 +282,9 @@
                 emp{
                     font-size: 1.5rem;
                 }
+                .img-1 img{
+                    width: 50%;
+                }
                 
                .servi{
                   display: inline;
@@ -285,13 +294,7 @@
                      display: flex;
                      flex-wrap: wrap;
                  }
-                 .serv-1{
-                        display: flex;
-                        width: 100%;
-                        justify-content: center;
-                        align-items: center;
-                        margin: auto;
-                 }
+                 
             }
         </style>
     </head>
@@ -327,7 +330,7 @@
                 <div class="serv-1" id="myBtn">
                  <p>Logo Design</p>
                 </div>
-                <div class="serv-1">
+                <div class="serv-1" id="myBtn2">
                  <p>Business cards</p>
                 </div>
                 <div class="serv-1">
@@ -386,6 +389,7 @@
             </div>
             
         </section>
+        
         <div class="line"></div>
         <section id="myskills">
             <div class="serv">
@@ -441,34 +445,75 @@
             </div>
             
         </section>
+        
+	
         <div id="myModal" class="modal">
 
             <!-- Modal content -->
             <div class="modal-content">
               
-              <div class="img-1">
-                 <img src="images/dklogo.jpg" >
-                 <label>Logo designed for my company</label>
+              <div class="mod-1">
+                <div class="img-1">
+                    <img src="images/dklogo.jpg" >
+                    <label>Logo designed for my company</label>
+                 </div>
+                 <div class="img-1">
+                   <img src="images/logo2-100.jpg" >
+                   <label>Logo designed for Grocery shop</label>
+                 </div>
+                 <div class="img-1">
+                   <img src="images/mobile logo.jpg">
+                   <label>Logo designed for Mobile shop</label>
+                 </div>
+                 <div class="img-1">
+                    <img src="images/shaalimaar_logo.jpg">
+                    <label>Logo designed for Restaurent</label>
+                 </div>
+                 <div class="img-1">
+                    <img src="images/bright logo.jpg">
+                    <label>Logo designed for Interior<br> Designer</label>
+                  </div>
               </div>
-              <div class="img-1">
-                <img src="images/logo2-100.jpg" >
-                <label>Logo designed for Grocery shop</label>
+              <div class="mod-1">
+                <div class="img-1">
+                    <img src="images/abjc2.jpg" >
+                    <label>Logo designed for a firm</label>
+                 </div>
+                 <div class="img-1">
+                   <img src="images/juice junction.jpg" >
+                   <label>Logo designed for Juice shop</label>
+                 </div>
+                 <div class="img-1">
+                   <img src="images/logo.jpg">
+                   <label>Logo designed for Travel Agent</label>
+                 </div>
+                 <div class="img-1">
+                    <img src="images/tiny-tots.jpg">
+                    <label>Logo designed for Child DayCare<br> Center</label>
+                  </div>
+                  <div class="img-1">
+                    <img src="images/mylogo.jpg">
+                    <label>Logo designed for Fly Ash Bricks<br>Company</label>
+                  </div>
               </div>
-              <div class="img-1">
-                <img src="images/mobile logo.jpg">
-                <label>Logo designed for Mobile shop</label>
-              </div>
+              
               <span class="close">&times;</span>
+              
             </div>
+             
+            
+            
+            
             
           
           </div>
           <script>
             // Get the modal
             var modal = document.getElementById("myModal");
-            
+           
             // Get the button that opens the modal
             var btn = document.getElementById("myBtn");
+            
             
             // Get the <span> element that closes the modal
             var span = document.getElementsByClassName("close")[0];
@@ -478,17 +523,22 @@
               modal.style.display = "block";
             }
             
+            
             // When the user clicks on <span> (x), close the modal
             span.onclick = function() {
               modal.style.display = "none";
             }
+
+            
             
             // When the user clicks anywhere outside of the modal, close it
             window.onclick = function(event) {
               if (event.target == modal) {
                 modal.style.display = "none";
+                
               }
             }
+            
             </script>
     </body>
 </html>
